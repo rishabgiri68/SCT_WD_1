@@ -1,0 +1,409 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at center, #2c2c2c, #000);
+  font-family: 'Orbitron', sans-serif;
+  scroll-behavior: auto; 
+}
+
+.nav-link {
+  transition: all 0.3s ease-in-out;
+  
+}
+
+
+.nav-link:hover {
+  color: #ffd700;
+  transform: scale(1.1);
+  text-shadow: 0 0 10px #ffd700;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, #2c2c2c, #000);
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  min-height: 100vh;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+
+.hero-image img {
+  width: 130%;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  transform: scale(1.8); /* move right and scale */
+  
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+   
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #c20d0d;
+  color: white;
+  border: 3px solid white;
+}
+
+.btn-primary:hover {
+  background-color: #ffd700;
+  color: black;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: black;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 60px;
+  gap: 60px;
+  align-items: center;
+}
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+.about-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.about-text p {
+  font-size: 18px;
+  color: #ccc;
+  line-height: 1.7;
+}
+
+.mcqueen-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+.stat h2 {
+  font-size: 32px;
+  margin: 0;
+  color: #ffd700;
+}
+.stat span {
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+.about-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+   transform: scale(1);
+}
+
+
+
+/* gallery.css */
+.gallery-section {
+  width: 100%;
+  padding: 60px 20px;
+  
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: 42px;
+  color: #fff;
+  margin-bottom: 60px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.gallery-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  position: relative;
+  width: 20rem;
+  height: 25rem;
+  cursor: pointer;
+}
+
+.bg, .bg1, .bg2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  transition: 1s;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px;
+}
+
+.bg {
+  background-image: url("blue-lightning-hit-effect-on-600nw-2027472782.webp");
+}
+
+.bg1 {
+  background-image: url("brownlightning.png");
+}
+
+.bg2 {
+  background-image: url("purple-lightning-near.jpg");
+}
+
+.bird, .Mater, .Ramone {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation: gifAnimation 0.2s linear infinite;
+  animation-play-state: paused!important;
+  transition: 1s;
+}
+
+.bird {
+  bottom: 60px;
+  background-image: url(sally2-removebg-preview.png);
+}
+
+.Mater {
+  bottom: -80px;
+  background-image: url(tabby1-removebg-preview.png);
+}
+
+.Ramone {
+  bottom: -150px;
+  left: -40px;
+  width: 25rem;
+  height: 25rem;
+  background-image: url(ramone-removebg-preview.png);
+
+}
+.box:hover .bg{
+    transform: perspective(20px) rotateX(2deg) translateY(-50px);
+}
+.box:hover .bg1{
+    transform: perspective(20px) rotateX(2deg) translateY(-50px);
+}
+.box:hover .bg2{
+    transform: perspective(20px) rotateX(2deg) translateY(-50px);
+}
+
+.box:hover .bird,
+.box:hover .Mater,
+.box:hover .Ramone {
+  animation-play-state: running!important;
+  transform: translateY(-200px) translateX(-10px);
+}
+
+.card-label {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #ff0000;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: background 0.3s;
+  width: fit-content;
+}
+
+.card-label:hover {
+  background: #ffd700;
+  color: #000;
+  cursor: pointer;
+}
+
+.PAGE{
+  width: 100%;
+  height: 30vh;
+}
+
+
+#move{
+  display: flex;
+  font-weight: 100%;
+  background-color: #d8ff04;
+  padding: 2vw 0;
+  overflow: hidden;
+}
+.marque{
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  padding: 0 1.5vw;
+  transform: translateX(-100%);
+}
+.marque h1{
+  font-size: 4vw;
+  color: #000;
+}
+
+.marque img{
+  height: 4vw;
+}
+
+/* Footer */
+/* === FOOTER SECTION === */
+
+.site-footer {
+  
+  color: #e8eeed;
+  padding: 60px 40px 30px;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #ebe3e3;
+  text-decoration: underline;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #ff0000;
+}
+
+/* Divider line */
+.footer-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px auto;
+  width: 90%;
+}
+
+/* Bottom Legal */
+.footer-bottom p {
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.footer-legal {
+  font-size: 13px;
+  line-height: 1.6;
+}
+@media (max-width: 480px) {
+  .hero-content h1,
+  .about-text h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+}

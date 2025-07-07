@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cars Inspired Navbar</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Orbitron Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- GSAP for smooth scroll -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+</head>
+
+<body>
+
+
+  <header class="w-full bg-black py-4 shadow-md fixed top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6">
+
+      <!-- Logo  -->
+      <div id="logoA" class="w-20">
+        <img src="cars-logo-11562871241i4l7wtgni3-removebg-preview.png" alt="Cars Logo" class="w-full drop-shadow-xl" />
+      </div>
+
+      <!-- Navbar  -->
+      <nav>
+        <ul id="navA"
+          class="flex gap-8 bg-red-700 px-8 py-2 rounded-full border-4 border-white shadow-lg text-white text-lg font-bold">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <!-- Left Text -->
+    <div  id="textA" class="hero-content">
+      <h1>Lightning Strikes Again</h1>
+      <p>Speed, passion, and a whole lot of horsepower — feel the energy of the race with Lightning McQueen.</p>
+      <div class="hero-buttons">
+        <a href="#gallery" class="btn btn-primary">Watch Trailer</a>
+        <a href="#about" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="hero-image">
+      <img  id="car1" src="Adobe Express - file.png" alt="Lightning McQueen" />
+    </div>
+  </section>
+
+  <!-- About McQueen Section -->
+  <section class="about-section">
+    <div class="about-image">
+      <img id="car2" src="download-removebg-preview.png" alt="Lightning McQueen Side Profile" />
+    </div>
+    <div id="text2" class="about-text">
+      <h1>About Lightning McQueen</h1>
+      <p>
+        Lightning McQueen isn’t just a racecar — he’s a legend. From humble beginnings to champion of the Piston Cup,
+        McQueen inspired a generation with his speed, heart, and signature catchphrase: "Ka-chow!" His journey is a tale
+        of grit, friendship, and horsepower.
+      </p>
+
+      <div class="mcqueen-stats">
+        <div class="stat">
+          <h2>198 mph</h2>
+          <span>Top Speed</span>
+        </div>
+        <div class="stat">
+          <h2>7</h2>
+          <span>Piston Cup Wins</span>
+        </div>
+        <div class="stat">
+          <h2>#95</h2>
+          <span>Racing Number</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- gallery -->
+
+
+  <section class="gallery-section">
+    <h1  id="meet" class="gallery-title">Meet the Legends</h1>
+
+    <div class="gallery-cards">
+
+      <div id="card1" class="card">
+        <div class="box">
+          <div class="bg"></div>
+          <div class="bird"></div>
+        </div>
+        <div class="card-label">Sally Carrera</div>
+      </div>
+
+      <div  id="card2" class="card">
+        <div class="box">
+          <div class="bg1"></div>
+          <div class="Mater"></div>
+        </div>
+        <div class="card-label">Tow Mater</div>
+      </div>
+
+      <div id="card3" class="card">
+        <div class="box">
+          <div class="bg2"></div>
+          <div class="Ramone"></div>
+        </div>
+        <div class="card-label">Ramone</div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- animation -->
+  <div class="PAGE">
+    <div id="move">
+      <div class="marque">
+        <h1>WATCH CARS NOW</h1>
+        <img src="" alt="arrow">
+      </div>
+      <div class="marque">
+        <h1>WATCH CARS NOW</h1>
+        <img src="arrow-br.svg" alt="arrow">
+      </div>
+      <div class="marque">
+        <h1>WATCH CARS NOW</h1>
+        <img src="arrow-br.svg" alt="arrow">
+      </div>
+      <div class="marque">
+        <h1>WATCH CARS NOW</h1>
+        <img src="arrow-br.svg" alt="arrow">
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <!-- Footer Links -->
+      <div class="footer-columns">
+
+        <div class="footer-column">
+          <h4>Home</h4>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Shorts</a></li>
+            <li><a href="#">Series</a></li>
+            <li><a href="#">SparkShorts</a></li>
+            <li><a href="#">Documentaries</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>ABOUT</h4>
+          <ul>
+            <li><a href="#">Tech at Pixar</a></li>
+            <li><a href="#">RenderMan</a></li>
+            <li><a href="#">Open USD</a></li>
+            <li><a href="#">Software R&amp;D</a></li>
+            <li><a href="#">Libraries</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Gallery</h4>
+          <ul>
+            <li><a href="#">Careers At Pixar</a></li>
+            <li><a href="#">Internships</a></li>
+            <li><a href="#">Life At Pixar</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>CONTACT</h4>
+          <ul>
+            <li><a href="#">Leaders</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Pixar In A Box</a></li>
+            <li><a href="#">Supplier Diversity</a></li>
+            <li><a href="#">FAQ’s</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="footer-divider" />
+
+    <div class="footer-bottom">
+      <p>Change Ad Consent</p>
+      <p class="footer-legal">
+        Privacy Policy | Your US State Privacy Rights | Children's Online Privacy Policy | Interest Based Ads
+      </p>
+      <p>© 1986–2025 Disney•Pixar</p>
+    </div>
+  </footer>
+
+
+
+
+  <!-- Smooth Scroll Script -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+    integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
